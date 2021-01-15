@@ -1,0 +1,30 @@
+body{
+	background-color:#aaa;
+}
+video{
+	width: 300px;
+}
+div.sheald{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	position:relative;
+	border-radius:50%;
+	width:100px;
+	height:100px;
+	transform:rotateZ(5deg);
+	background: conic-gradient(#333 18%, #999 18% 20%,#333 20% 38%,#999 38% 40%,#333 40% 58%, #999 58% 60%,#fff 60% 78%,#999 78% 80%,#fff 80% 98%,#999 98% 0);
+}
+div.sheald > div{
+	position:absolute;
+	border-radius:50%;
+	background-color:#aaa;
+	width:75px;
+	height:75px;
+}
+.controlPanel{
+	display: grid;
+}
+.controlPanel video{
+	width: 100%;
+}

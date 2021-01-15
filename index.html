@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="connection, conversation, energias">
+<meta name="author" content="MS">
+<meta name="description" content="program to make intergalactic conversations">
+<title>Transponder</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<!--<input type="file" accept="audio/*" capture>-->
+	<div class="controlPanel">
+		<video id="player" autoplay></video>
+		<label for="videoTitle">Title:</label>
+		<input type="text" name="videoTitle" id="videoTitle" placeholder="Add some title..."/>
+		<label for="videoDescription">Coment:</label>
+		<textarea type="text" name="videoComent" id="videoComent" placeholder="Add some coment..." ></textarea>
+		<button id="stop">Stop</button>
+		<button id="start">Start</button>
+		<button id="pause" class="resume">Pause</button>
+		<a id="download">Download</a>
+	</div>
+	<template id="memoryTemplate">
+		<video class="memoryVideo"></video>
+		<h4 class="memoryTitle">title</h4>
+		<p class="memoryDate">date</p>
+		<p class="memoryComnet">Comnet</p>
+		<button class="memoryClose">X</button>
+	</template>
+	<!--<video src="acetest.webm" controls></video>-->
+
+</body>
+<script type="module" src="app.js"></script>
+</html>
